@@ -1,0 +1,46 @@
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ nano .bash_profile
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ nano .bash_profile
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ source .bash_profile
+warning: in the working copy of '.bash_profile', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'First_practise_git_in_cmd.txt', LF will be replaced by CRLF the next time Git touches it
+On branch edit_branch
+Your branch is up to date with 'origin/edit_branch'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .bash_profile
+        new file:   First_practise_git_in_cmd.txt
+
+[edit_branch fe07ca6] default msg done inside nano
+ 2 files changed, 138 insertions(+)
+ create mode 100644 .bash_profile
+ create mode 100644 First_practise_git_in_cmd.txt
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.80 KiB | 919.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SaaiKrahaanth/Git-sample.git
+   2ce63c8..fe07ca6  edit_branch -> edit_branch
+branch 'edit_branch' set up to track 'origin/edit_branch'.
+
+THE NANO ENVIRONMENTAL COMMAND IS:-
+
+
+echo "GIT UPLOAD INITIATED"
+
+git add .
+git status
+git commit -m "default msg done inside nano"
+git push --set-upstream origin edit_branch
+
+echo "GIT UPLOAD COMPLTED"
+
+
+
