@@ -1,0 +1,133 @@
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~ (main)
+$ cd Git_Instruction/
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ ls
+Git-sample/  Git_Instruction/
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ cd Git-sample/
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ ls
+created_fileFrom_cmd_nano.txt  dumy.txt  index.html/  sample.html
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ cat created_fileFrom_cmd_nano.txt
+hi its inside nano,i created this file its intresting am prety exited its OCT 7 2024 22:31
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$  git add .
+warning: in the working copy of 'created_fileFrom_cmd_nano.txt', LF will be replaced by CRLF the next time Git touches it
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$  git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ cd ..
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ ls
+Git-sample/  Git_Instruction/
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ git add .
+warning: adding embedded git repository: Git-sample
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Git-sample
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Git-sample
+hint:
+hint: See "git help submodule" for more information.
+error: 'Git_Instruction/' does not have a commit checked out
+fatal: adding files failed
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-sample/
+        Git_Instruction/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction (main)
+$ cd Git-sample/
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ ls
+created_fileFrom_cmd_nano.txt  dumy.txt  index.html/  sample.html
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ git add .
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ git status
+On branch edit_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   created_fileFrom_cmd_nano.txt
+        new file:   sample.html
+
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ git commit -m "
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ ^C
+
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ git commit -m "created_fileFrom_cmd_nano.txt,new file:sample.html"
+[edit_branch 2ce63c8] created_fileFrom_cmd_nano.txt,new file:sample.html
+ 2 files changed, 1 insertion(+)
+ create mode 100644 created_fileFrom_cmd_nano.txt
+ create mode 100644 sample.html
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$ git push --set-upstream origin edit_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 501 bytes | 501.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'edit_branch' on GitHub by visiting:
+remote:      https://github.com/SaaiKrahaanth/Git-sample/pull/new/edit_branch
+remote:
+To https://github.com/SaaiKrahaanth/Git-sample.git
+ * [new branch]      edit_branch -> edit_branch
+branch 'edit_branch' set up to track 'origin/edit_branch'.
+
+SAI KRAHAANTH@PrimeLegendary MINGW64 ~/Git_Instruction/Git-sample (edit_branch)
+$
